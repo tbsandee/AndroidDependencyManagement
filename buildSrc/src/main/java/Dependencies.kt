@@ -12,8 +12,11 @@ object Versions {
 }
 
 object Deps {
-    val kotlin_stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
-    val kotlin_gradle_plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
+    // unfortunately this doesn't work!
+    object Kotlin {
+        val stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
+        val gradle_plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
+    }
     val app_compat_v7 = "com.android.support:appcompat-v7:${Versions.support_lib}"
     val support_v4 = "com.android.support:support-v4:${Versions.support_lib}"
     val design = "com.android.support:design:${Versions.support_lib}"
